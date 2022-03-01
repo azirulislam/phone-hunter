@@ -21,7 +21,7 @@ searchPhone();
          <img src="${brand.image}" class="card-img-top" alt="...">
          <div class="card-body">
          <h5 class="card-title">${brand.phone_name}</h5>
-         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+         <p class="card-text">${brand.slug}</p>
        </div>`;
            
             phoneSearch.appendChild(div);
