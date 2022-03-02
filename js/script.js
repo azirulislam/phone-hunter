@@ -7,6 +7,9 @@ const searchPhone = () => {
     fetch(url)
     .then(res => res.json())
     .then(data => displayPhone(data.data));
+    if(searchText == ''){
+      alert('you are nothing found')
+    }
     
 }
             // Show all
@@ -32,6 +35,7 @@ const displayDetails = phone => {
     fetch(url)
     .then(res => res.json())
     .then(data => showPhoneDetails(data.mainFeatures));
+    console.log(phone);
     
 }
             // Show details
