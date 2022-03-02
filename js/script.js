@@ -16,7 +16,7 @@ const searchPhone = () => {
         const div = document.createElement('div');
         div.classList.add('col');
        div.innerHTML= `
-        <div onclick="displayDetails('${data.slug}')" class="card">
+        <div onclick="displayDetails('${data.brand}')" class="card">
          <img src="${brand.image}" class="card-img-top" alt="...">
          <div class="card-body">
          <h5 class="card-title">${brand.phone_name}</h5>
