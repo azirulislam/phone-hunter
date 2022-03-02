@@ -22,8 +22,8 @@ const searchPhone = () => {
          <h5 class="card-title">${brand.phone_name}</h5>
          <p class="card-text">${brand.slug}</p>
        </div>`;
-           
-            phoneSearch.appendChild(div);
+      phoneSearch.appendChild(div);
+      
     })
 }
 
@@ -41,11 +41,11 @@ const displayDetails = phone => {
     div.classList.add('card');
     div.innerHTML = `
     <div class="card mx-auto " style="width: 32rem;">
-      <img src="${mainFeatures.storage}" class="card-img-top" alt="...">
+      <img src="" class="card-img-top" alt="...">
       <div class="card-body ">
-      <h5 class="card-title"> this is card </h5>
+      <h5 class="card-title"> Phone Details </h5>
       <p class="card-text"></p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
+      <a href="#" class="btn btn-primary">Go-here</a>
     </div>
   </div>`;
   phoneDetails.appendChild(div);
