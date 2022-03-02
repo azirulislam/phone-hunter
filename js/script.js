@@ -17,7 +17,7 @@ searchPhone();
         const div = document.createElement('div');
         div.classList.add('col');
        div.innerHTML= `
-        <div class="card">
+        <div onclick="displayDetails(${data.mainFeatures})" class="card">
          <img src="${brand.image}" class="card-img-top" alt="...">
          <div class="card-body">
          <h5 class="card-title">${brand.phone_name}</h5>
@@ -26,6 +26,14 @@ searchPhone();
            
             phoneSearch.appendChild(div);
     })
+} 
+const displayDetails = feature => {
+    const url = ` https://openapi.programming-hero.com/api/phone/${feature}`;
+    fetch(url)
+    .then(res => res.json())
+    .then(data =>console.log(data));
+
 }
+
        
     
